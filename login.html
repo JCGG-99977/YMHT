@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>源码时代</title>
+    <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
+    <script src="./resources/jquery-3.5.1.js"></script>
+    <script src="./resources/layui/layui.js"></script>
+    <script src="./resources/layui/layui.all.js"></script>
+    <link rel="stylesheet" href="./resources/layui/css/layui.css">
+    <link rel="stylesheet" href="./css/verify.css">
+    <script src="./js/verify.min.js"></script>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/index.js"></script>
+</head>
+
+<body>
+    <!-- logo显示 -->
+    <div class="logo">
+        <h1>
+            <a href="javascript:;">
+                源码时代
+            </a>
+        </h1>
+    </div>
+    <!-- 登录模块的制作 -->
+    <div class="login">
+        <div class="login-box">
+            <h3>后台管理系统登录</h3>
+            <form class="layui-form" action="">
+                <div class="layui-form-item">
+                    <i class="layui-icon layui-icon-username"></i>
+                    <input type="text" name="uid" required lay-verify="uid" placeholder="请输入账号" autocomplete="off" class="layui-input">
+                </div>
+                <div class="layui-form-item">
+                    <i class="layui-icon layui-icon-password"></i>
+                    <input type="password" name="upwd" required lay-verify="required|upwd" placeholder="请输入6-18位密码" autocomplete="off" class="layui-input">
+                </div>
+                <!-- <div class="layui-form-item">
+                    <div id="mpanel1">
+                    </div>
+                </div> -->
+
+                <div class="layui-form-item">
+                    <button lay-submit="" class="layui-btn layui-btn-fluid">登录</button>
+                </div>
+            </form>
+            <span>
+                <a href="javascript:;" class="link_repwd">找回密码</a>|<a href="javascript:;" class="link_reg">注册账号</a>
+            </span>
+        </div>
+        <!-- 注册模块 -->
+        <div class="reg-box">
+            <h3>后台管理系统注册</h3>
+            <form class="layui-form" action="">
+                <div class="layui-form-item">
+                    <i class="layui-icon layui-icon-username"></i>
+                    <input type="text" name="title" required lay-verify="required|uid" placeholder="请输入账号" autocomplete="off" class="layui-input">
+                </div>
+                <div class="layui-form-item">
+                    <i class="layui-icon layui-icon-user"></i>
+                    <input type="text" name="title" required lay-verify="required" placeholder="请输入姓名" autocomplete="off" class="layui-input">
+                </div>
+                <div class="layui-form-item">
+                    <i class="layui-icon layui-icon-email"></i>
+                    <input type="email" name="title" required lay-verify="required|email" placeholder="请输入邮箱" autocomplete="off" class="layui-input">
+                </div>
+                <div class="layui-form-item">
+                    <i class="layui-icon layui-icon-password"></i>
+                    <input type="password" name="title" required lay-verify="required|upwd" placeholder="请输入6-18位密码" autocomplete="off" class="layui-input">
+                </div>
+                <div class="layui-form-item">
+                    <button lay-submit="" class="layui-btn layui-btn-fluid">注册</button>
+                </div>
+            </form>
+            <a href="javascript:;" class="link-login">登录</a>
+        </div>
+        <!-- 找回密码模块 -->
+        <div class="repwd-box">
+            <h3>后台管理系统找回密码</h3>
+            <form class="layui-form" action="">
+                <div class="layui-form-item">
+                    <i class="layui-icon layui-icon-username"></i>
+                    <input type="text" name="title" required lay-verify="required|uid" placeholder="请输入账号" autocomplete="off" class="layui-input">
+                </div>
+                <div class="layui-form-item">
+                    <i class="layui-icon layui-icon-user"></i>
+                    <input type="text" name="title" required lay-verify="required|uname" placeholder="请输入姓名" autocomplete="off" class="layui-input">
+                </div>
+                <div class="layui-form-item">
+                    <i class="layui-icon layui-icon-email"></i>
+                    <input type="email" name="title" required lay-verify="required|email" placeholder="请输入邮箱" autocomplete="off" class="layui-input">
+                </div>
+                <div class="layui-form-item">
+                    <button lay-submit="" class="layui-btn layui-btn-fluid">确认</button>
+                </div>
+            </form>
+            <a href="javascript:;" class="link-login">登录</a>
+        </div>
+    </div>
+</body>
+
+</html>
